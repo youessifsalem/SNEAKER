@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Big+Shoulders+Display:wght@100..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: "Kumbh Sans", sans-serif;
+  }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid  hsl(219, 9%, 45%);
+    margin: 0 auto;
+    width: 80%;
+
+}
+.header img{
+    width: 150px;
+}
+.items{
+    margin-right: 700px;
+    display: flex;
+    gap: 50px;
+    color: hsl(219, 9%, 45%);
+    font-weight: 40px;
+    
+
+}
+.nav{
+
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+
+ }
+.lift img{
+    width: 20px;
+}
+.right img{
+     width: 50px;
+} 
+.im{
+    width: 300px;
+    border-radius: 8px;
+
+}
+.small-image{
+    display: flex;
+    gap: 10px;
+    
+}
+.small-image img{
+    width: 67px;
+    border-radius: 8px;
+    margin-top: 15px;
+
+
+}
+
+  .rr{
+    display: flex;
+    margin: 0  20rem;
+    gap: 70px;
+    width: 80%;
+  }
+  .main{
+    margin-top: 50px;
+  }
+.sneaker{
+    margin-bottom:10px;
+    color: hsl(219, 9%, 45%);
+}
+.h1{
+    width: 300px;
+    margin-bottom: 20px;
+}
+.ppp{
+    width: 450px;
+    color: hsl(219, 9%, 45%);
+    margin-bottom: 10px;
+}
+.num{
+    display: flex;
+    width: 100px;
+    gap: 7px;
+}
+
+.pp{
+    padding: 1px 5px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 5px;
+}
+del{
+    color: hsl(219, 9%, 45%);
+}
+.displays{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.addition {
+    border: 0px solid black;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 5px;
+
+}
+.cart button{
+border: 0 solid ;
+width: 150px;
+height: 30px;
+display: flex;
+gap: 10px;
+align-items: center;
+justify-content: center;
+background-color: hsl(26, 100%, 55%);
+border-radius: 5px;
+transition: 0.5;
+}
+.cart button:hover{
+    cursor: pointer;
+
+  }
+  
+  /* للأجهزة اللوحية */
+  @media (max-width: 1024px) {
+    .header {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .items {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .rr {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .im {
+      width: 100%;
+    }
+    .main {
+      text-align: center;
+    }
+  }
+  
+
+  /* التصميم الأساسي (الشاشات الكبيرة) */
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    padding: 20px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid hsl(219, 9%, 45%);
+  }
+  .items {
+    display: flex;
+    gap: 40px;
+  }
+  .rr {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  /* للأجهزة اللوحية */
+  @media (max-width: 1024px) {
+    .header {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .items {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .rr {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .im {
+      width: 100%;
+    }
+    .main {
+      text-align: center;
+    }
+  }
+  
+  /* للهواتف */
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px;
+    }
+    .items {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .rr {
+      gap: 15px;
+    }
+    .im {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .small-image img {
+      width: 60px;
+    }
+    .main {
+      padding: 0 10px;
+    }
+    .cart button {
+      width: 100%;
+    }
+  }
+  
+  /* للهواتف الصغيرة */
+  @media (max-width: 480px) {
+    .items {
+      font-size: 14px;
+    }
+    .im {
+      width: 100%;
+    }
+    .small-image img {
+      width: 50px;
+    }
+    .cart button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
