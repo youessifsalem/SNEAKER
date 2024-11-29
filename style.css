@@ -236,6 +236,9 @@ body {
   
   /* للهواتف الصغيرة */
   @media (max-width: 480px) {
+    .header {
+        margin-bottom: 2px;
+    }
     .items {
       font-size: 14px;
     }
